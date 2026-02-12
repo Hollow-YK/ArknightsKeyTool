@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'core/config/app_config.dart';
 import 'features/key_settings/providers/key_settings_provider.dart';
-import 'ui/screens/common/home_screen.dart';
+import '/ui/screens/common/main_screen.dart';
 import 'ui/themes/app_theme.dart';
 
 class MyApp extends StatelessWidget {
@@ -13,11 +12,12 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (_) => KeySettingsProvider()..loadSettings(),
       child: MaterialApp(
-        title: AppConfig.appName,
+        title: '明日方舟PC快捷键修改器',
         theme: AppTheme.lightTheme,
         darkTheme: AppTheme.darkTheme,
         themeMode: ThemeMode.system,
-        home: const HomeScreen(),
+        home: const MainScreen(), // ✅ 使用新的主界面
+        debugShowCheckedModeBanner: false,
       ),
     );
   }

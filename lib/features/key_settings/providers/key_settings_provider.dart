@@ -132,7 +132,7 @@ class KeySettingsProvider extends ChangeNotifier {
   String keyIdToDisplay(String keyId) {
     switch (keyId) {
       case 'bannedEscape':
-        return 'Esc (禁用)';
+        return 'Esc (不建议更改)';
       case 'keyTab':
         return 'Tab';
       case 'keySpace':
