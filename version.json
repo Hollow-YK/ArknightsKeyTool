@@ -1,0 +1,16 @@
+{
+  "release": {
+    "version": "1.0.0",
+    "versioncode": "1",
+    "changelog": "无"
+  },
+  "beta": {
+    "version": "1.0.0-beta0",
+    "versioncode": "0",
+    "changelog": "无"
+  },
+  "core": {
+    "version": "1.0.0",
+    "versioncode": "1"
+  }
+}

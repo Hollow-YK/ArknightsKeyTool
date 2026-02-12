@@ -3,6 +3,7 @@ import 'key_setting_screen.dart';
 import 'intro_screen.dart';
 import 'document_screen.dart';
 import 'about_screen.dart';
+import 'setting_screen.dart';
 
 /// 主界面 – 左侧导航栏 + 右侧页面视图
 class MainScreen extends StatefulWidget {
@@ -13,13 +14,14 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  int _selectedIndex = 0; // 默认选中页面
+  int _selectedIndex = 2; // 默认选中页面
   final PageController _pageController = PageController(initialPage: 1);
 
   static const List<Widget> _pages = [
     IntroScreen(),
     KeySettingScreen(),
     DocumentScreen(),
+    SettingScreen(),
     AboutScreen(),
   ];
 
@@ -63,6 +65,11 @@ class _MainScreenState extends State<MainScreen> {
                 icon: Icon(Icons.description_outlined),
                 selectedIcon: Icon(Icons.description),
                 label: Text('文档'),
+              ),
+              NavigationRailDestination(
+                icon: Icon(Icons.settings_outlined),
+                selectedIcon: Icon(Icons.settings),
+                label: Text('设置'),
               ),
               NavigationRailDestination(
                 icon: Icon(Icons.person_outline),
