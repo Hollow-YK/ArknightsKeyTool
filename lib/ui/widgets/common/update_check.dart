@@ -155,7 +155,7 @@ class _UpdateCheckerDialogState extends State<UpdateCheckerDialog> {
 
   Future<void> _openReleasePage() async {
     final url = _currentChannel == 'gitee'
-        ? 'https://gitee.com/Hollow-YK/arknights_key_tool/releases'
+        ? 'https://gitee.com/Hollow-YK/ArknightsKeyTool/releases'
         : _updateManager.getGitHubReleaseUrl();
 
     if (await canLaunchUrl(Uri.parse(url))) {

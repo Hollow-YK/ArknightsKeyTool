@@ -91,12 +91,12 @@ class UpdateManager {
 
     if (_updateChannel == 'gitee') {
       baseUrl = isBeta
-          ? 'https://gitee.com/Hollow-YK/arknights_key_tool/raw/dev/version.json'
-          : 'https://gitee.com/Hollow-YK/arknights_key_tool/raw/main/version.json';
+          ? 'https://gitee.com/Hollow-YK/ArknightsKeyTool/raw/dev/version.json'
+          : 'https://gitee.com/Hollow-YK/ArknightsKeyTool/raw/main/version.json';
     } else {
       final String githubUrl = isBeta
-          ? 'https://raw.githubusercontent.com/Hollow-YK/arknights_key_tool/dev/version.json'
-          : 'https://raw.githubusercontent.com/Hollow-YK/arknights_key_tool/main/version.json';
+          ? 'https://raw.githubusercontent.com/Hollow-YK/ArknightsKeyTool/dev/version.json'
+          : 'https://raw.githubusercontent.com/Hollow-YK/ArknightsKeyTool/main/version.json';
 
       if (_useMirror && _mirrorUrl.isNotEmpty) {
         final String mirror = _mirrorUrl.endsWith('/')
@@ -114,7 +114,7 @@ class UpdateManager {
   /// 获取GitHub Release页面URL
   String getGitHubReleaseUrl() {
     const String githubReleaseUrl =
-        'https://github.com/Hollow-YK/arknights_key_tool/releases';
+        'https://github.com/Hollow-YK/ArknightsKeyTool/releases';
 
     if (_updateChannel == 'github' && _useMirror && _mirrorUrl.isNotEmpty) {
       final String mirror = _mirrorUrl.endsWith('/')
@@ -149,6 +149,14 @@ class UpdateManager {
       _mirrorUrl = trimmedUrl;
       await _save();
     }
+  }
+
+  /// 测试镜像连接
+  Future<bool> testMirrorConnection() async {
+    // 这里可以添加实际的网络测试逻辑
+    // 暂时简单验证URL格式
+    return _mirrorUrl.isNotEmpty &&
+        (_mirrorUrl.startsWith('http://') || _mirrorUrl.startsWith('https://'));
   }
 
   /// 重置为默认设置
