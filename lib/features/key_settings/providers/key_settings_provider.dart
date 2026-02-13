@@ -132,7 +132,7 @@ class KeySettingsProvider extends ChangeNotifier {
   String keyIdToDisplay(String keyId) {
     switch (keyId) {
       case 'bannedEscape':
-        return 'Esc (禁用)';
+        return 'Esc (不建议更改)';
       case 'keyTab':
         return 'Tab';
       case 'keySpace':
@@ -140,6 +140,9 @@ class KeySettingsProvider extends ChangeNotifier {
       default:
         if (keyId.startsWith('alpha')) {
           return keyId.substring(5); // 返回字母部分
+        }
+        if (keyId.startsWith('num')) {
+          return keyId.substring(3); // 返回数字部分
         }
         return keyId;
     }
