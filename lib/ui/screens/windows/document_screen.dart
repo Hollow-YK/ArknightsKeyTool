@@ -58,6 +58,7 @@ class DocumentScreen extends StatelessWidget {
               context: context,
               title: '关于 keyId',
               content: '''
+• 数字键 0~9 → numX（例如 num0 对应 0 键）
 • 字母键 A~Z → alphaX（例如 alphaF 对应 F 键）
 • 功能键 → keyX
 • Esc 键 → bannedEscape
