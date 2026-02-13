@@ -78,7 +78,7 @@
 • Tab 键 → keyTab
 • Space 键 → keySpace
 
-<details>
+</details>
 
 ### 常见问题
 
