@@ -1,7 +1,7 @@
 <div align="center">
   <img src="images/icon.png" alt="Logo" width="100" height="100">
 
-  # Miao3trike Flutter
+  # Arknights Key Tool
 
   <p align="center">
     一个可以更改明日方舟PC版键位的小工具
@@ -68,8 +68,8 @@
 
 <details><summary>点击查看 keyId 规则</summary>
 
-• 数字键 0~9 → numX（例如 num0 对应 0 键）
-• 字母键 A~Z → alphaX（例如 alphaF 对应 F 键）
+• 数字键 0-9 → numX（例如 num0 对应 0 键）
+• 字母键 A-Z → alphaX（例如 alphaF 对应 F 键）
 • 功能键 → keyX
 • Esc 键 → bannedEscape
 上面这些已经在软件内有预定义了。
