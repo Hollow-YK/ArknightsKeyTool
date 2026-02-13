@@ -127,6 +127,7 @@ A：游戏原生注册表中不包含暂停键，因此首次打开时显示“�
 - 使用Flutter进行开发
 - ~~`README.md`部分照抄了我的另一个仓库的README~~
 - `README.md`参考了部分开源项目
+- `README.md`使用了 [shields.io](https://shields.io/) 提供的内容
 
 ### 贡献/参与者
 
