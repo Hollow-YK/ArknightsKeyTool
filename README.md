@@ -6,14 +6,14 @@
   <p align="center">
     一个可以更改明日方舟PC版键位的小工具
     <br />
-    <a href="https://github.com/Hollow-YK/Miao3trike_Flutter/issues">报告 Bug</a>
+    <a href="https://github.com/Hollow-YK/ArknightsKeyTool/issues">报告 Bug</a>
   </p>
 
   <p align="center">
-    <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android" alt="Platform" />
-    <img src="https://img.shields.io/badge/Language-Dart%20%2F%20Kotlin%20%2F%20Java-blue?style=flat-square&logo=dart" alt="Language" />
-    <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License" />
-    <img src="https://img.shields.io/github/stars/Hollow-YK/Miao3trike_Flutter?style=flat-square&logo=github&color=darkgreen" alt="Stars" />
+    <img src="https://img.shields.io/badge/Platform-Windows-blue?style=flat-square&logo=windows" alt="Platform" />
+    <img src="https://img.shields.io/badge/Language-Dart-blue?style=flat-square&logo=dart" alt="Language" />
+    <img src="https://img.shields.io/badge/License-GPLV3-blue?style=flat-square" alt="License" />
+    <img src="https://img.shields.io/github/stars/Hollow-YK/ArknightsKeyTool?style=flat-square&logo=github&color=darkgreen" alt="Stars" />
   </p>
 </div>
 
