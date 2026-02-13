@@ -6,14 +6,14 @@
   <p align="center">
     一个可以更改明日方舟PC版键位的小工具
     <br />
-    <a href="https://github.com/Hollow-YK/Miao3trike_Flutter/issues">报告 Bug</a>
+    <a href="https://github.com/Hollow-YK/ArknightsKeyTool/issues">报告 Bug</a>
   </p>
 
   <p align="center">
-    <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android" alt="Platform" />
-    <img src="https://img.shields.io/badge/Language-Dart%20%2F%20Kotlin%20%2F%20Java-blue?style=flat-square&logo=dart" alt="Language" />
-    <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License" />
-    <img src="https://img.shields.io/github/stars/Hollow-YK/Miao3trike_Flutter?style=flat-square&logo=github&color=darkgreen" alt="Stars" />
+    <img src="https://img.shields.io/badge/Platform-Windows-blue?style=flat-square&logo=windows" alt="Platform" />
+    <img src="https://img.shields.io/badge/Language-Dart-blue?style=flat-square&logo=dart" alt="Language" />
+    <img src="https://img.shields.io/badge/License-GPLV3-blue?style=flat-square" alt="License" />
+    <img src="https://img.shields.io/github/stars/Hollow-YK/ArknightsKeyTool?style=flat-square&logo=github&color=darkgreen" alt="Stars" />
   </p>
 </div>
 
@@ -78,7 +78,7 @@
 • Tab 键 → keyTab
 • Space 键 → keySpace
 
-<details>
+</details>
 
 ### 常见问题
 
@@ -127,6 +127,7 @@ A：游戏原生注册表中不包含暂停键，因此首次打开时显示“�
 - 使用Flutter进行开发
 - ~~`README.md`部分照抄了我的另一个仓库的README~~
 - `README.md`参考了部分开源项目
+- `README.md`使用了 [shields.io](https://shields.io/) 提供的内容
 
 ### 贡献/参与者
 
