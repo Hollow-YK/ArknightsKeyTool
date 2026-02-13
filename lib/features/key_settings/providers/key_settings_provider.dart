@@ -141,6 +141,9 @@ class KeySettingsProvider extends ChangeNotifier {
         if (keyId.startsWith('alpha')) {
           return keyId.substring(5); // 返回字母部分
         }
+        if (keyId.startsWith('num')) {
+          return keyId.substring(3); // 返回数字部分
+        }
         return keyId;
     }
   }

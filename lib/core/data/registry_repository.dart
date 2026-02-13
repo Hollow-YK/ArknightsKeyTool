@@ -58,7 +58,6 @@ class RegistryRepository {
     try {
       var index = 0;
       while (true) {
-        // ✅ 修复：Utf16 不是 SizedNativeType，改用 Uint16 分配后 cast
         final lpValueName = calloc<Uint16>(_bufferSize).cast<Utf16>();
         final lpcchValueName = calloc<Uint32>()..value = _bufferSize;
 
@@ -158,7 +157,8 @@ class RegistryRepository {
     if (hKey == null) return false;
 
     try {
-      final bytes = utf8.encode(data)..add(0);
+      final encoded = utf8.encode(data);
+      final bytes = <int>[...encoded, 0]; // 创建可增长列表并追加 0
       final lpData = calloc<Uint8>(bytes.length);
       lpData.asTypedList(bytes.length).setAll(0, bytes);
 
