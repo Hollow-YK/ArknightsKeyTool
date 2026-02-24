@@ -54,6 +54,15 @@ class KeySettingsProvider extends ChangeNotifier {
     final map = KeySettingsService.parseFromJson(jsonStr);
     _mappings = map.values.toList();
 
+    // 补充缺失的 Space 键（暂停键）
+    if (!_mappings.any((m) => m.id == SpaceMapping.id)) {
+      // 创建一个默认的 Space 映射，并设置默认键位（假设为 "keySpace"）
+      final defaultSpace = SpaceMapping.createDefault().copyWith(
+        keyId: 'keySpace',
+      );
+      _mappings.add(defaultSpace);
+    }
+
     // 排序：默认9个 + Space（如果有）
     _sortMappings();
 
