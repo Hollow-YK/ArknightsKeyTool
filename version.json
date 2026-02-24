@@ -1,8 +1,8 @@
 {
   "release": {
-    "version": "1.0.0",
-    "versioncode": "1",
-    "changelog": "无"
+    "version": "1.0.1",
+    "versioncode": "2",
+    "changelog": "修复了没设置过暂停时不显示暂停的Bug"
   },
   "beta": {
     "version": "1.0.0-beta0",

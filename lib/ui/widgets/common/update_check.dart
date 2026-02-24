@@ -6,8 +6,8 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:arknights_key_tool/core/services/update_manager.dart';
 
 // 本地版本常量（请根据实际发布版本修改）
-const String LOCAL_VERSION = "1.0.0";
-const String LOCAL_VERSION_CODE = "1";
+const String LOCAL_VERSION = "1.0.1";
+const String LOCAL_VERSION_CODE = "2";
 const String LOCAL_CORE_VERSION_CODE = "1";
 const bool IS_BETA = false;
 
